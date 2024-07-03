@@ -9,21 +9,7 @@ valors = {
 }
 
 def to_roman(n):
+    
     result = valors[n]
     
-    if n == 5:
-        result = "V"
-    elif n == 1:
-        result = "I"
-    elif n == 10:
-        result = "X"
-    elif n == 50:
-        result = "L"
-    elif n == 100:
-        result = "C"
-    elif n == 500:
-        result = "D"
-    elif n == 1000:
-        result = "M"
-            
     return result
