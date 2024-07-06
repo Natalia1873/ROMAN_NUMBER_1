@@ -40,8 +40,10 @@ def test_dividir_en_digitos():
 def test_cualquier_romano():
     assert arabigo_a_romano(1999) =="MCMXCIX"
 
-def xtest_romano_mayor_de_3999():
-    assert arabigo_a_romano(4127) == "V*CXXVII"
+def test_romano_mayor_de_3999():
+    assert arabigo_a_romano(4127) == "IV*CXXVII"
+    na = int(6.022e23) # 602200000000000027262976
+    assert arabigo_a_romano(na) == "DCII*******CC******XXVII**CCLXII*CMLXXVI"
 
 def test_divide_en_miles():
     assert divide_en_miles(4127) == [127, 4]
@@ -50,3 +52,4 @@ def test_divide_en_miles():
 def test_divide_en_miles_pero_con_milliones():
     assert divide_en_miles(4123234) == [234, 123, 4]
     assert divide_en_miles(3123234) == [234, 3123]
+   
